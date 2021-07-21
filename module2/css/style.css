@@ -1,0 +1,115 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    
+}
+h1{
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+p {
+    margin-top: 57px;
+    letter-spacing: 0.5px;
+}
+
+.container {
+    display: flex;
+    margin-top: 10%;
+    height: 220px;
+}
+
+
+.sm-box1 {
+    border: 1px solid black;
+    position: relative;
+    top: 0;
+    float: right;
+    width: 120px;
+    text-align: center;
+    font-size: 25px;
+    background: chocolate;
+    color: white;
+}
+
+.sm-box2 {
+    border: 1px solid black;
+    position: relative;
+    top: 0;
+    float: right;
+    width: 120px;text-align: center;
+    font-size: 25px;
+    background: cyan;
+}
+
+.sm-box3 {
+    border: 1px solid black;
+    position: relative;
+    top: 0;
+    float: right;
+    width: 120px;text-align: center;
+    font-size: 25px;
+    background: rgb(30, 210, 60);
+}
+
+.first-box {
+    border: 1px solid black;
+    background: gray;
+    margin: 15px;
+    width: 33.3%;
+    border: 3px solid black;
+}
+
+.second-box {
+    border: 1px solid black;
+    background: gray;
+    margin: 15px;
+    border: 3px solid black;
+    width: 33.3%;
+}
+
+.third-box {
+    border: 1px solid black;
+    background: gray;
+    margin: 15px;
+    border: 3px solid black;
+    width: 33.3%;
+}
+
+/* media queries */  
+
+@media (max-width: 991px) and (min-width: 768px){
+    .first-box {
+        width: 50%;
+    }
+
+    .second-box {
+        width: 50%;
+    }
+
+    .third-box {
+        top: 400px;
+        position: absolute;
+        width: 93.3%;
+        height: 150px;
+    }
+} 
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+    .first-box {
+        width: 90%;
+        
+    }
+
+    .second-box {
+        width: 90%;
+    }
+
+    .third-box {
+        width: 90%;
+    }
+}
